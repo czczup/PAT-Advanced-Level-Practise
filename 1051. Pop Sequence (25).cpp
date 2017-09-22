@@ -12,7 +12,6 @@ int main(){
 		}
 	    int current = 0;
 		bool flag = false;
-	    /*½«1-6ÈëÕ»*/
 	    for(int j=1;j<=N;j++){
 	        s.push(j);
 	        if(s.size()>M)
