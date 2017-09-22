@@ -1,5 +1,8 @@
 #include <stdio.h>
-#include <math.h>
+int abs(int num){
+	return num>0?num:-num;
+}
+
 int main(){
 	int N,M,sum = 0;
 	scanf("%d",&N);
@@ -15,7 +18,7 @@ int main(){
 	    int a,b;
 		scanf("%d %d",&a,&b);
 		int temp = abs(sum_dis[b-2] - sum_dis[a-2]);
-		int min = temp < sum-temp ? temp : sum-temp;
+		int min = temp<sum-temp?temp:sum-temp;
 	    printf("%d\n",min);
 	}
 }
